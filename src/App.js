@@ -1,5 +1,6 @@
 import "./styles.css";
 import { Link } from "react-scroll";
+import Bull from "./assets/Bull.png";
 
 export default function App() {
   return (
@@ -7,6 +8,9 @@ export default function App() {
       <header className="nav">
         <nav className="nav__container__actions">
           <ul>
+            <li>
+              <img className="logo" src={Bull} alt="Bull" />
+            </li>
             <li>
               <Link activeClass="active" smooth spy to="Home">
                 Home
